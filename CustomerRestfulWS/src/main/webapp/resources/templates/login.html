@@ -1,0 +1,27 @@
+
+<div class="generic-container">
+	<div class="panel panel-default">
+		<div class="tablecontainer">Login</div>
+		<table>
+			<tr>
+				LoginId:
+				<input type="number" ng-model="login.loginId" />
+			</tr>
+			<br>
+			<tr>
+				User Name:
+				<input type="text" ng-model="login.userName" />
+			</tr>
+			<br>
+			<tr>
+				PassWord:
+				<input type="text" ng-model="login.password" />
+			</tr>
+			<br>
+			<tr>
+				<a href="" ng-click="sendPost()">SignIn</a>
+			</tr>
+		</table>
+	</div>
+</div>
+{{errorMessage}}
