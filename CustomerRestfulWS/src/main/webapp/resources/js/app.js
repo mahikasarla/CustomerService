@@ -48,11 +48,13 @@ App.config(function($stateProvider, $urlRouterProvider) {
 			custdet:function($http, $stateParams){
 				return $http.get('customer/' +$stateParams.id)
 				.then(function sucess(response){
-						return response.data
-					console.log('response.data', response.data)
-				}, function error(response){
-				return response.data
 				console.log('response.data', response.data)
+						return response.data
+					
+				}, function error(response){
+				console.log('response.data', response.data)
+				return response.data
+				
 				})
 			}
 		}

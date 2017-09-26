@@ -9,8 +9,9 @@ App.controller('controller1',function($http, $scope, $rootScope, $state) {
 
 				console.log('in sendPost controller1', $rootScope.custdetails)
 			}, function error(response){
-				return response.data
 				console.log('response.data', response.data)
+				return response.data
+				
 				}
 		)
 	}	

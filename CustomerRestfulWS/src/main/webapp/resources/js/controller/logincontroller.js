@@ -8,8 +8,10 @@ App.controller('logincontroller', function($http, $scope, $state) {
 							$state.go('homepage2');
 						}, 
 				function error(response){
+							$scope.errorMessage = response.data.message;
+							console.log("errorMessage"+ response.data.message )
 							$state.go('login');
-					$scope.errorMessage = response.statusText;
+					
 				});
 			}
 
